@@ -1,59 +1,39 @@
-# ✋ Gesture Control System
+# Gesture Control System (Karthik)
 
-Control your computer using hand gestures with real-time hand tracking and AI-powered recognition.
+## Overview
+A comprehensive hand gesture recognition system designed for intuitive human-computer interaction. This project explores advanced computer vision techniques to map complex hand movements to digital actions, serving as a prototype for next-gen accessibility tools.
 
----
+## Features
+-   **Multi-Hand Tracking**: Simultaneous detection of both left and right hands.
+-   **Custom Gestures**: definable mapping for specific programmatic actions.
+-   **Low Latency**: Optimized for real-time performance on standard webcams.
+-   **OS Integration**: Direct control over mouse, keyboard, and system volume.
 
-## 🌟 Overview
+## Technology Stack
+-   **Vision**: OpenCV, MediaPipe.
+-   **Automation**: PyAutoGUI.
+-   **Language**: Python 3.8+.
 
-A Python-based gesture control system that uses computer vision to track hand movements and translate them into system commands.
+## Usage Flow
+1.  **Calibrate**: System baselines the background and lighting.
+2.  **Track**: Hand skeleton is extracted from the video frame.
+3.  **Classify**: Geometric analysis determines the gesture pose.
+4.  **Control**: Action is dispatched to the operating system.
 
-## ✨ Features
-
-- **Hand Tracking** - Real-time gesture detection
-- **System Control** - Control volume, brightness, etc.
-- **Modern GUI** - Visual feedback interface
-- **Customizable** - Add your own gestures
-
-## 📁 Project Structure
-
-```
-gesture control karthik/
-├── main.py              # Entry point
-├── gui.py               # User interface
-├── hand_tracking.py     # Hand detection
-├── system_control.py    # System commands
-└── requirements.txt     # Dependencies
-```
-
-## 🚀 Quick Start
-
+## Quick Start
 ```bash
-# Setup
-python -m venv .venv
-source .venv/bin/activate
+# Clone the repository
+git clone https://github.com/Nytrynox/Gesture-Control-System.git
+
+# Install requirements
 pip install -r requirements.txt
 
-# Run
-python main.py
+# Launch controller
+python gesture_control.py
 ```
 
-## 🔬 Technology Stack
-
-| Component | Technology |
-|-----------|------------|
-| Hand Tracking | MediaPipe |
-| Computer Vision | OpenCV |
-| GUI | Tkinter/PyQt |
-
-## 📝 License
-
+## License
 MIT License
 
-## 👤 Author
-
+## Author
 **Karthik Idikuda**
-
----
-
-*Control with a wave*
